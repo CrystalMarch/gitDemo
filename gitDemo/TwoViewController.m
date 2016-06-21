@@ -23,6 +23,7 @@
     label.backgroundColor = [UIColor greenColor];
     [self.view addSubview:label];
     self.view.backgroundColor = [UIColor whiteColor];
+    
 }
 
 - (void)didReceiveMemoryWarning {
