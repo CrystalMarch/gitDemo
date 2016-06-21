@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "TwoViewController.h"
+@interface ViewController ()<UIAlertViewDelegate>
 
 @end
 
@@ -28,6 +28,10 @@
     NSLog(@"hahahahahah");
     [alert show];
 //    i am not okey
+}
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    TwoViewController *TVC = [[TwoViewController alloc] init];
+    [self presentModalViewController:TVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
